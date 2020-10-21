@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('firstlayaout', function (){
+    return view('firstlayaout');
+});
+
+Route::resource('/hola', 'ControllerFarfan');
+
+Route::get('/miprimerarray', 'ControllerFarfan@alumno');
